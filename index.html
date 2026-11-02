@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>МИР АВТОМОБИЛЕЙ</h1>
+    <p>Всё о машинах в одном месте</p>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="bmw.html">BMW</a>
+    <a href="mercedes.html">Mercedes</a>
+    <a href="toyota.html">Toyota</a>
+    <a href="audi.html">Audi</a>
+    <a href="sport.html">Спорткары</a>
+    <a href="electric.html">Электромобили</a>
+    <a href="history.html">История</a>
+    <a href="news.html">Новости</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+
+
+<main>
+    <h2>Добро пожаловать!</h2>
+
+    <p>
+        Этот сайт посвящён миру автомобилей.
+        Здесь вы узнаете о популярных марках,
+        спортивных машинах, электромобилях
+        и истории автомобилестроения.
+    </p>
+
+    <h2>Каталог автомобилей (List)</h2>
+    <p>Выберите модель и нажмите «Подробнее», чтобы посмотреть характеристики.</p>
+    <div id="carsList" class="cars-grid" aria-live="polite">Загрузка автомобилей...</div>
+
+    <h2>Почему люди любят автомобили?</h2>
+
+    <p>
+        Автомобили помогают людям путешествовать,
+        быстро добираться до нужных мест и
+        получать удовольствие от вождения.
+    </p>
+
+    <img
+        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000"
+        alt="Красивый автомобиль"
+        class="car-image"
+    >
+         <h2>Счётчик</h2>
+
+    <div class="counter-box">
+        <div id="counter" class="counter-number">0</div>
+
+        <div class="counter-buttons">
+            <button onclick="increase()">Увеличить +</button>
+            <button onclick="reset()">Сбросить</button>
+            <button onclick="decrease()">Уменьшить −</button>
+        </div>
+    </div>
+</main>
+
+<dialog id="carDialog" class="car-dialog" aria-labelledby="carDialogTitle">
+    <button type="button" id="closeCarDialog" class="dialog-close" aria-label="Закрыть">×</button>
+    <div id="carDetails"></div>
+</dialog>
+
+<footer>
+    <p>© 2026 Мир автомобилей</p>
+</footer>
+<script src="script.js"></script>
+<script src="cars.js"></script>
+</body>
+</html>
